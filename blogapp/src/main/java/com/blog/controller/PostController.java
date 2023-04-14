@@ -3,6 +3,7 @@ package com.blog.controller;
 import com.blog.dto.PostDto;
 import com.blog.services.PostService;
 import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @Controller
 public class PostController {
+
 
     private PostService postService;
 

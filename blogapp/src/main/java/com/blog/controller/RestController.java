@@ -4,16 +4,14 @@ import com.blog.dto.PostDto;
 import com.blog.entities.Post;
 import com.blog.mapper.PostMapper;
 import com.blog.repositories.PostRepository;
-import com.blog.services.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-@RestController
-public class ReatController {
+@org.springframework.web.bind.annotation.RestController
+public class RestController {
     @Autowired
     private PostRepository postRepository;
 
